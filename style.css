@@ -53,11 +53,11 @@ nav {
 .first-nac-int::before {
     content: "";
     position: absolute;
-    bottom: 0px;
-    left: 0%;
-    width: 1%;
+    bottom: 1px;
+    left: 1.5%;
+    width: 1.2%;
     height: 0px;
-    background: rgb(111, 26, 26);
+    background: rgb(101, 242, 136);
     transition: all 0.4s ease;
     transform: translateX(-50%);
 }
@@ -65,11 +65,11 @@ nav {
 .first-nac-int::after {
     content: "";
     position: absolute;
-    bottom: 0px;
-    left: 0%;
-    width: 0%;
-    height: 1px;
-    background: rgb(111, 26, 26);
+    bottom: 1px;
+    left: -1.3%;
+    width: 5%;
+    height: 2px;
+    background: rgb(101, 242, 136);
     transition: all 0.4s ease;
     transform: translateX(-50%);
 }
@@ -95,16 +95,6 @@ nav {
     justify-content: space-between;
 
 }
-
-.last-nav-int {
-    width: 70%;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: 1px solid rgb(239, 206, 206);
-}
-
 
 
 .first-nac-int,
@@ -132,11 +122,11 @@ nav {
 .insta-int::before {
     content: "";
     position: absolute;
-    bottom: -1px;
-    left: -1%;
-    width: 2.4%;
+    bottom: 1.2px;
+    left: 2%;
+    width: 2.7%;
     height: 0px;
-    background: rgb(111, 26, 26);
+    background: rgb(101, 242, 136);
     transition: all 0.4s ease;
     transform: translateX(-50%);
 }
@@ -144,18 +134,61 @@ nav {
 .insta-int::after {
     content: "";
     position: absolute;
-    bottom: -0.1px;
-    left: 0%;
+    bottom: 2px;
+    left: 1%;
     width: 0%;
     height: 2px;
-    background: rgb(111, 26, 26);
+    background: rgb(101, 242, 136);
     transition: all 0.4s ease;
     transform: translatey(50%);
 }
+
 .insta-int:hover::before {
     height: 50%;
 }
 
 .insta-int:hover::after {
+    width: 60%;
+}
+
+/* /////////////// */
+.last-nav-int {
+    width: 70%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* border-left: 1px solid rgb(239, 206, 206); */
+}
+
+.last-nav-int::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 1%;
+    width: 1%;
+    height: 0px;
+    background: rgb(101, 242, 136);
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+.last-nav-int::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 1%;
+    width: 0%;
+    height: 2px;
+    background: rgb(101, 242, 136);
+    transition: all 0.4s ease;
+    transform: translatey(50%);
+}
+
+.last-nav-int:hover::before {
+    height: 50%;
+}
+
+.last-nav-int:hover::after {
     width: 60%;
 }
